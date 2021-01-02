@@ -1,6 +1,10 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic&display=swap");
 
+:root {
+	--blue-bg: #243043;
+}
+
 /*
 	Forty by HTML5 UP
 	html5up.net | @ajlkn
@@ -99,7 +103,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #243043;
+		background: var(--blue-bg);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3114,7 +3118,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #243043;
+		background-color: var(--blue-bg);
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
 		cursor: default;
 		font-weight: 600;
@@ -3410,7 +3414,7 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			pointer-events: none;
-			background-color: #243043;
+			background-color: var(--blue-bg);
 			content: '';
 			display: block;
 			height: 100%;
@@ -3589,7 +3593,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #243043;
+		background-color: var(--blue-bg);
 	}
 
 		#main > * {
