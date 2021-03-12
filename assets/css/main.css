@@ -3,6 +3,7 @@
 
 :root {
 	--blue-bg: #252525;
+	--blue-bg-tp: #252525dd;
 	--tile: #2b313f;
 	--tile-alt: #4d3316;
 }
@@ -2770,6 +2771,15 @@ input, select, textarea {
 				z-index: 3;
 			}
 
+			/* article text background */
+			.tiles article:hover header{
+				background-color: var(--blue-bg-tp);
+				display: inline;
+				padding: 0.5rem;
+				-webkit-box-decoration-break: clone;
+				box-decoration-break: clone;
+			}
+
 			.tiles article h3 {
 				font-size: 1.75em;
 			}
@@ -2798,14 +2808,15 @@ input, select, textarea {
 				display: block;
 				height: 100%;
 				left: 0;
-				opacity: 0.75;
+				opacity: 0.60;
 				position: absolute;
 				width: 100%;
 				z-index: 2;
 			}
 
 			.tiles article:after {
-				background-color: rgba(36, 41, 67, 0.75);
+				background-color: var(--blue-bg);
+				opacity: 0.5;
 				content: '';
 				display: block;
 				height: 100%;
