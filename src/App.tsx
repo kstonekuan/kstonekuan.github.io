@@ -1,4 +1,3 @@
-import { Github, Linkedin, Twitter } from 'lucide-react';
 import { ImageWithFallback } from './components/figma/ImageWithFallback';
 
 export default function App() {
@@ -9,7 +8,7 @@ export default function App() {
 
         {/* Main Introduction Card */}
         <div className="card main-card">
-          <h1 className="mb-6 text-gray-800">Hey, Kingston Kuan here.</h1>
+          <h1 className="mb-6 text-gray-800">Hey, Kingston here.</h1>
           <div className="space-y-4 text-gray-700">
             <p>I grew up in Singapore and was a Software Engineer at Jane Street, TikTok, and Verkada at some point.</p>
             <p>Focusing on startup building right now, exciting things to come!</p>
@@ -19,16 +18,31 @@ export default function App() {
         {/* Follow Card */}
         <div className="card social-card">
           <h4 className="mb-3 text-gray-800">Follow along</h4>
-          <div className="flex space-x-3">
-            <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
-              <Linkedin className="w-4 h-4 text-white" />
-            </div>
-            <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
-              <Github className="w-4 h-4 text-white" />
-            </div>
-            <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
-              <Twitter className="w-4 h-4 text-white" />
-            </div>
+          <div className="flex items-center space-x-3">
+            <a
+              href="https://linkedin.com/in/kingston-kuan"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 bg-white rounded-full flex items-center justify-center p-1 hover:bg-gray-100 transition-colors"
+            >
+              <img src="/LinkedIn_logo.svg" alt="LinkedIn" className="w-8 h-8" />
+            </a>
+            <a
+              href="https://github.com/kstonekuan"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 bg-white rounded-full flex items-center justify-center p-1 hover:bg-gray-100 transition-colors"
+            >
+              <img src="/GitHub_logo.svg" alt="GitHub" className="w-8 h-8" />
+            </a>
+            <a
+              href="https://x.com/kstonekuan"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 bg-white rounded-full flex items-center justify-center p-1 hover:bg-gray-100 transition-colors"
+            >
+              <img src="/X_logo.svg" alt="X (Twitter)" className="w-8 h-8" />
+            </a>
           </div>
         </div>
 
