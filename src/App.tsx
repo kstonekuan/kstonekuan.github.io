@@ -7,16 +7,6 @@ export default function App() {
       {/* Responsive card container */}
       <div className="card-container p-4 sm:p-8">
 
-        {/* Quotes Card */}
-        <div className="card quotes-card">
-          <h3 className="mb-4 text-gray-800">Quotes to live by:</h3>
-          <div className="space-y-3 text-sm text-gray-700">
-            <p>"Nothing good happens after 2 am"</p>
-            <p>"When life gives you lemonade, make lemons. Life will be all like 'whaaaat?'"</p>
-            <p>"With all due respect, I am gonna completely ignore everything you just said."</p>
-          </div>
-        </div>
-
         {/* Main Introduction Card */}
         <div className="card main-card">
           <h1 className="mb-6 text-gray-800">Hey, Kingston Kuan here.</h1>
@@ -51,6 +41,16 @@ export default function App() {
               alt="Nano Banana Figurine"
               className="w-full h-full object-cover"
             />
+          </div>
+        </div>
+
+        {/* Quotes Card */}
+        <div className="card quotes-card">
+          <h3 className="mb-4 text-gray-800">Quotes to live by:</h3>
+          <div className="space-y-3 text-sm text-gray-700">
+            <p>"Nothing good happens after 2 am"</p>
+            <p>"When life gives you lemonade, make lemons. Life will be all like 'whaaaat?'"</p>
+            <p>"With all due respect, I am gonna completely ignore everything you just said."</p>
           </div>
         </div>
 
