@@ -124,7 +124,6 @@
 	a {
 		color: inherit;
 		-webkit-text-decoration: inherit;
-		-webkit-text-decoration: inherit;
 		text-decoration: inherit;
 	}
 
@@ -346,7 +345,7 @@
 	}
 
 	[hidden]:where(:not([hidden="until-found"])) {
-		display: none !important;
+		display: none;
 	}
 
 	* {

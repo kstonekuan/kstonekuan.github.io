@@ -117,7 +117,7 @@ function Carousel({
 				canScrollNext,
 			}}
 		>
-			<div
+			<section
 				onKeyDownCapture={handleKeyDown}
 				className={cn("relative", className)}
 				role="region"
@@ -126,7 +126,7 @@ function Carousel({
 				{...props}
 			>
 				{children}
-			</div>
+			</section>
 		</CarouselContext.Provider>
 	);
 }
@@ -192,6 +192,7 @@ function CarouselPrevious({
 			)}
 			disabled={!canScrollPrev}
 			onClick={scrollPrev}
+			aria-valuenow={canScrollPrev ? 1 : 0}
 			{...props}
 		>
 			<ArrowLeft />
@@ -222,6 +223,7 @@ function CarouselNext({
 			)}
 			disabled={!canScrollNext}
 			onClick={scrollNext}
+			aria-valuenow={canScrollNext ? 1 : 0}
 			{...props}
 		>
 			<ArrowRight />

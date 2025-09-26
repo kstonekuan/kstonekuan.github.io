@@ -19,12 +19,12 @@ export function ImageWithFallback(
 		<div
 			className={`inline-block bg-gray-100 text-center align-middle ${className ?? ""}`}
 			style={style}
+			{...rest}
 		>
 			<div className="flex items-center justify-center w-full h-full">
 				<img
 					src={ERROR_IMG_SRC}
-					alt="Error loading image"
-					{...rest}
+					alt="Error indicator"
 					data-original-url={src}
 				/>
 			</div>

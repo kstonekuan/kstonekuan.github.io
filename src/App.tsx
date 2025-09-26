@@ -1,6 +1,16 @@
+import { useState } from "react";
 import { ImageWithFallback } from "./components/figma/ImageWithFallback";
+import {
+	Dialog,
+	DialogContent,
+	DialogDescription,
+	DialogTitle,
+	DialogTrigger,
+} from "./components/ui/dialog";
 
 export default function App() {
+	const [isImageModalOpen, setIsImageModalOpen] = useState(false);
+
 	return (
 		<div className="min-h-screen bg-gray-50">
 			{/* Responsive card container */}
@@ -59,13 +69,33 @@ export default function App() {
 					<h4 className="mb-3 text-gray-800">
 						Something cool from the latest in tech:
 					</h4>
-					<div className="w-full h-32 overflow-hidden rounded border">
-						<ImageWithFallback
-							src="/nano_banana_figurine.png"
-							alt="Nano Banana Figurine"
-							className="w-full h-full object-cover"
-						/>
-					</div>
+					<Dialog open={isImageModalOpen} onOpenChange={setIsImageModalOpen}>
+						<DialogTrigger asChild>
+							<div className="w-full h-32 overflow-hidden rounded border cursor-pointer hover:opacity-90 transition-opacity">
+								<ImageWithFallback
+									src="/nano_banana_figurine.png"
+									alt="Nano Banana Figurine"
+									className="w-full h-full object-cover"
+								/>
+							</div>
+						</DialogTrigger>
+						<DialogContent className="max-w-4xl w-full p-0 border-none bg-transparent shadow-none">
+							<DialogTitle className="sr-only">
+								Nano Banana Figurine - Full Size View
+							</DialogTitle>
+							<DialogDescription className="sr-only">
+								Full size view of the nano banana figurine from the latest in
+								tech
+							</DialogDescription>
+							<div className="relative">
+								<ImageWithFallback
+									src="/nano_banana_figurine.png"
+									alt="Nano Banana Figurine - Full Size"
+									className="w-full h-auto max-h-[90vh] object-contain rounded-lg"
+								/>
+							</div>
+						</DialogContent>
+					</Dialog>
 				</div>
 
 				{/* Quotes Card */}

@@ -6,6 +6,20 @@ import type * as React from "react";
 import { buttonVariants } from "./button";
 import { cn } from "./utils";
 
+const IconLeft = ({
+	className,
+	...props
+}: React.HTMLAttributes<SVGElement>) => (
+	<ChevronLeft className={cn("size-4", className)} {...props} />
+);
+
+const IconRight = ({
+	className,
+	...props
+}: React.HTMLAttributes<SVGElement>) => (
+	<ChevronRight className={cn("size-4", className)} {...props} />
+);
+
 function Calendar({
 	className,
 	classNames,
@@ -59,12 +73,8 @@ function Calendar({
 				...classNames,
 			}}
 			components={{
-				IconLeft: ({ className, ...props }) => (
-					<ChevronLeft className={cn("size-4", className)} {...props} />
-				),
-				IconRight: ({ className, ...props }) => (
-					<ChevronRight className={cn("size-4", className)} {...props} />
-				),
+				IconLeft,
+				IconRight,
 			}}
 			{...props}
 		/>
