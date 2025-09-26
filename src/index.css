@@ -487,6 +487,18 @@
 		transform: translateY(-50%);
 	}
 
+	.-translate-x-1\/2 {
+		transform: translateX(-50%);
+	}
+
+	.-translate-y-1\/2 {
+		transform: translateY(-50%);
+	}
+
+	.dialog-center {
+		transform: translate(-50%, -50%);
+	}
+
 	.gap-4 {
 		gap: calc(var(--spacing) * 4);
 	}
@@ -529,6 +541,10 @@
 
 	.max-w-4xl {
 		max-width: 56rem;
+	}
+
+	.max-w-\[calc\(100\%-2rem\)\] {
+		max-width: calc(100% - 2rem);
 	}
 
 	.max-h-\[90vh\] {
