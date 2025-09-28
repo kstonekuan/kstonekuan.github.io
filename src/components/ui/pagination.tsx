@@ -2,7 +2,7 @@ import {
 	ChevronLeftIcon,
 	ChevronRightIcon,
 	MoreHorizontalIcon,
-} from "lucide-react@0.487.0";
+} from "lucide-react";
 import type * as React from "react";
 import { type Button, buttonVariants } from "./button";
 import { cn } from "./utils";
