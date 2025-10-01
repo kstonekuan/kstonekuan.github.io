@@ -1,7 +1,7 @@
 "use client";
 
-import * as RechartsPrimitive from "recharts";
 import * as React from "react";
+import * as RechartsPrimitive from "recharts";
 
 import { cn } from "./utils";
 
@@ -105,13 +105,34 @@ ${colorConfig
 const ChartTooltip = RechartsPrimitive.Tooltip;
 
 function ChartTooltipContent({
-	React.ComponentProps<"div"> & {
-		hideLabel?: boolean;
-		hideIndicator?: boolean;
-		indicator?: "line" | "dot" | "dashed";
-		nameKey?: string;
-		labelKey?: string;
-	}) {
+	active,
+	payload,
+	className,
+	indicator = "dot",
+	hideLabel = false,
+	hideIndicator = false,
+	label,
+	labelFormatter,
+	labelClassName,
+	formatter,
+	color,
+	nameKey,
+	labelKey,
+}: React.ComponentProps<"div"> & {
+	active?: boolean;
+	payload?: Array<any>;
+	className?: string;
+	indicator?: "line" | "dot" | "dashed";
+	hideLabel?: boolean;
+	hideIndicator?: boolean;
+	label?: string;
+	labelFormatter?: (value: any, payload: Array<any>) => React.ReactNode;
+	labelClassName?: string;
+	formatter?: (value: any) => React.ReactNode;
+	color?: string;
+	nameKey?: string;
+	labelKey?: string;
+}) {
 	const { config } = useChart();
 
 	const tooltipLabel = React.useMemo(() => {
@@ -243,11 +264,11 @@ function ChartLegendContent({
 	verticalAlign = "bottom",
 	nameKey,
 }: React.ComponentProps<"div"> & {
-		payload?: RechartsPrimitive.LegendProps["payload"];
-		verticalAlign?: RechartsPrimitive.LegendProps["verticalAlign"];
-		hideIcon?: boolean;
-		nameKey?: string;
-	}) {
+	payload?: RechartsPrimitive.LegendProps["payload"];
+	verticalAlign?: RechartsPrimitive.LegendProps["verticalAlign"];
+	hideIcon?: boolean;
+	nameKey?: string;
+}) {
 	const { config } = useChart();
 
 	if (!payload?.length) {
