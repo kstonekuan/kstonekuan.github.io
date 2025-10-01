@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { AsciiArtCard } from "./components/AsciiArtCard";
 import { ImageWithFallback } from "./components/figma/ImageWithFallback";
 import {
 	Dialog,
@@ -15,6 +16,9 @@ export default function App() {
 		<div className="min-h-screen bg-gray-50">
 			{/* Responsive card container */}
 			<div className="card-container p-4 sm:p-8">
+				{/* ASCII Art Card */}
+				<AsciiArtCard filePath="/ascii.txt" />
+
 				{/* Main Introduction Card */}
 				<div className="card main-card">
 					<h1 className="mb-6 text-gray-800">Hey, Kingston here.</h1>

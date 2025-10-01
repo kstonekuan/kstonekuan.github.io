@@ -1,7 +1,7 @@
 /*! tailwindcss v4.1.3 | MIT License | https://tailwindcss.com */
 @layer properties {
-	@supports (((-webkit-hyphens: none)) and (not (margin-trim: inline))) or
-		((-moz-orient: inline) and (not (color: rgb(from red r g b)))) {
+	@supports (((-webkit-hyphens: none)) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color: rgb(from red r g b)))) {
+
 		*,
 		:before,
 		:after,
@@ -19,6 +19,7 @@
 }
 
 @layer theme {
+
 	:root,
 	:host {
 		--font-sans:
@@ -45,20 +46,15 @@
 		--font-weight-medium: 500;
 		--default-font-family: var(--font-sans);
 		--default-font-feature-settings: var(--font-sans--font-feature-settings);
-		--default-font-variation-settings: var(
-			--font-sans--font-variation-settings
-		);
+		--default-font-variation-settings: var(--font-sans--font-variation-settings);
 		--default-mono-font-family: var(--font-mono);
-		--default-mono-font-feature-settings: var(
-			--font-mono--font-feature-settings
-		);
-		--default-mono-font-variation-settings: var(
-			--font-mono--font-variation-settings
-		);
+		--default-mono-font-feature-settings: var(--font-mono--font-feature-settings);
+		--default-mono-font-variation-settings: var(--font-mono--font-variation-settings);
 	}
 }
 
 @layer base {
+
 	*,
 	:after,
 	:before,
@@ -81,16 +77,15 @@
 		-webkit-text-size-adjust: 100%;
 		tab-size: 4;
 		line-height: 1.5;
-		font-family: var(
-			--default-font-family,
-			ui-sans-serif,
-			system-ui,
-			sans-serif,
-			"Apple Color Emoji",
-			"Segoe UI Emoji",
-			"Segoe UI Symbol",
-			"Noto Color Emoji"
-		);
+		font-family: var(--default-font-family,
+				ui-sans-serif,
+				system-ui,
+				sans-serif,
+				"Apple Color Emoji",
+				"Segoe UI Emoji",
+				"Segoe UI Symbol",
+				"Noto Color Emoji"
+			);
 		font-feature-settings: var(--default-font-feature-settings, normal);
 		font-variation-settings: var(--default-font-variation-settings, normal);
 		-webkit-tap-highlight-color: transparent;
@@ -136,22 +131,18 @@
 	kbd,
 	samp,
 	pre {
-		font-family: var(
-			--default-mono-font-family,
-			ui-monospace,
-			SFMono-Regular,
-			Menlo,
-			Monaco,
-			Consolas,
-			"Liberation Mono",
-			"Courier New",
-			monospace
-		);
+		font-family: var(--default-mono-font-family,
+				ui-monospace,
+				SFMono-Regular,
+				Menlo,
+				Monaco,
+				Consolas,
+				"Liberation Mono",
+				"Courier New",
+				monospace);
 		font-feature-settings: var(--default-mono-font-feature-settings, normal);
-		font-variation-settings: var(
-			--default-mono-font-variation-settings,
-			normal
-		);
+		font-variation-settings: var(--default-mono-font-variation-settings,
+				normal);
 		font-size: 1em;
 	}
 
@@ -621,31 +612,31 @@
 		width: 100%;
 	}
 
-	@media (width >= 40rem) {
+	@media (width >=40rem) {
 		.container {
 			max-width: 40rem;
 		}
 	}
 
-	@media (width >= 48rem) {
+	@media (width >=48rem) {
 		.container {
 			max-width: 48rem;
 		}
 	}
 
-	@media (width >= 64rem) {
+	@media (width >=64rem) {
 		.container {
 			max-width: 64rem;
 		}
 	}
 
-	@media (width >= 80rem) {
+	@media (width >=80rem) {
 		.container {
 			max-width: 80rem;
 		}
 	}
 
-	@media (width >= 96rem) {
+	@media (width >=96rem) {
 		.container {
 			max-width: 96rem;
 		}
@@ -724,8 +715,7 @@
 	}
 
 	.transform {
-		transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z)
-			var(--tw-skew-x) var(--tw-skew-y);
+		transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
 	}
 
 	.items-center {
@@ -738,38 +728,20 @@
 
 	:where(.space-y-3 > :not(:last-child)) {
 		--tw-space-y-reverse: 0;
-		margin-block-start: calc(
-			calc(var(--spacing) * 3) *
-			var(--tw-space-y-reverse)
-		);
-		margin-block-end: calc(
-			calc(var(--spacing) * 3) *
-			calc(1 - var(--tw-space-y-reverse))
-		);
+		margin-block-start: calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));
+		margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
 	}
 
 	:where(.space-y-4 > :not(:last-child)) {
 		--tw-space-y-reverse: 0;
-		margin-block-start: calc(
-			calc(var(--spacing) * 4) *
-			var(--tw-space-y-reverse)
-		);
-		margin-block-end: calc(
-			calc(var(--spacing) * 4) *
-			calc(1 - var(--tw-space-y-reverse))
-		);
+		margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
+		margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
 	}
 
 	:where(.space-x-3 > :not(:last-child)) {
 		--tw-space-x-reverse: 0;
-		margin-inline-start: calc(
-			calc(var(--spacing) * 3) *
-			var(--tw-space-x-reverse)
-		);
-		margin-inline-end: calc(
-			calc(var(--spacing) * 3) *
-			calc(1 - var(--tw-space-x-reverse))
-		);
+		margin-inline-start: calc(calc(var(--spacing) * 3) * var(--tw-space-x-reverse));
+		margin-inline-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-x-reverse)));
 	}
 
 	.overflow-hidden {
@@ -860,6 +832,7 @@
 		from {
 			opacity: 0;
 		}
+
 		to {
 			opacity: 1;
 		}
@@ -869,6 +842,7 @@
 		from {
 			opacity: 1;
 		}
+
 		to {
 			opacity: 0;
 		}
@@ -879,6 +853,7 @@
 			opacity: 0;
 			transform: scale(0.95);
 		}
+
 		to {
 			opacity: 1;
 			transform: scale(1);
@@ -890,6 +865,7 @@
 			opacity: 1;
 			transform: scale(1);
 		}
+
 		to {
 			opacity: 0;
 			transform: scale(0.95);
@@ -1112,8 +1088,45 @@ html {
 	transform: rotate(-0.5deg);
 }
 
+.ascii-card {
+	transform: rotate(0.5deg);
+	box-shadow:
+		0 4px 6px -1px rgba(0, 0, 0, 0.1),
+		0 8px 25px -5px rgba(0, 0, 0, 0.1),
+		0 16px 32px -8px rgba(0, 0, 0, 0.1),
+		0 24px 48px -12px rgba(0, 0, 0, 0.15);
+}
+
+/* ASCII Art specific styles */
+.ascii-art-container {
+	overflow-x: auto;
+	max-width: 100%;
+}
+
+.ascii-art {
+	font-family: var(--font-mono);
+	line-height: 1;
+	margin: 0;
+	font-size: 0.34rem;
+	white-space: pre;
+	color: var(--color-gray-800);
+}
+
+@media (min-width: 640px) {
+	.ascii-art {
+		font-size: 0.4rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.ascii-art {
+		font-size: 0.4rem;
+	}
+}
+
 /* Desktop card positioning and rotation */
 @media (min-width: 640px) {
+
 	/* Main card - spans center column vertically */
 	.main-card {
 		grid-column: 2 / 3;
@@ -1142,6 +1155,13 @@ html {
 		grid-column: 3 / 4;
 		grid-row: 2 / 3;
 		transform: rotate(-1deg);
+	}
+
+	/* ASCII Art card - bottom left */
+	.ascii-card {
+		grid-column: 1 / 2;
+		grid-row: 2 / 4;
+		transform: rotate(1.5deg);
 	}
 }
 
