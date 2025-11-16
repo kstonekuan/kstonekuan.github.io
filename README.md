@@ -1,11 +1,75 @@
+# All About Me
 
-  # Personal Site with Card Layout
+A modern personal website built with React, Vite, and TypeScript, featuring a card-based layout design.
 
-  This is a code bundle for Personal Site with Card Layout. The original project is available at https://www.figma.com/design/KIJUeRNaam3ED2DETGM4D5/Personal-Site-with-Card-Layout.
+## Tech Stack
 
-  ## Running the code
+- **Framework**: React with Vite
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS with shadcn/ui components
+- **UI Components**: Radix UI primitives
+- **Code Quality**: Biome for linting and formatting
 
-  Run `npm i` to install the dependencies.
+## Getting Started
 
-  Run `npm run dev` to start the development server.
-  
+### Prerequisites
+
+- Node.js (recommended: latest LTS version)
+- pnpm (preferred package manager)
+
+### Installation
+
+Install dependencies using pnpm:
+
+```bash
+pnpm install
+```
+
+### Development
+
+Start the development server on port 3000:
+
+```bash
+pnpm dev
+```
+
+The site will automatically open in your browser at http://localhost:3000
+
+### Building
+
+Build the project for production:
+
+```bash
+pnpm build
+```
+
+The built files will be output to the `build` directory.
+
+### Code Quality
+
+Run type checking:
+
+```bash
+pnpm typecheck
+```
+
+Run linting and formatting:
+
+```bash
+pnpm lint
+```
+
+Run all checks (typecheck + lint):
+
+```bash
+pnpm check
+```
+
+## Project Structure
+
+- `/src` - Source code and components
+- `/public` - Static assets
+- `/build` - Production build output
+- `vite.config.ts` - Vite configuration
+- `tsconfig.json` - TypeScript configuration
+- `biome.json` - Biome linting and formatting configuration
