@@ -1128,7 +1128,7 @@ html {
 
 /* ASCII Art specific styles */
 .ascii-art-container {
-	overflow-x: auto;
+	overflow: hidden;
 	max-width: 100%;
 }
 

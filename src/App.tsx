@@ -77,6 +77,7 @@ export default function App() {
 						<DialogTrigger asChild>
 							<div className="w-full h-32 overflow-hidden rounded border cursor-pointer hover:opacity-90 transition-opacity">
 								<ImageWithFallback
+									webpSrc="/nano_banana_figurine.webp"
 									src="/nano_banana_figurine.png"
 									alt="Nano Banana Figurine"
 									className="w-full h-full object-cover"
@@ -93,6 +94,7 @@ export default function App() {
 							</DialogDescription>
 							<div className="relative">
 								<ImageWithFallback
+									webpSrc="/nano_banana_figurine.webp"
 									src="/nano_banana_figurine.png"
 									alt="Nano Banana Figurine - Full Size"
 									className="w-full h-auto max-h-[90vh] object-contain rounded-lg"
