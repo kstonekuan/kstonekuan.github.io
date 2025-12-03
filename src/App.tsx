@@ -77,26 +77,26 @@ export default function App() {
 						<DialogTrigger asChild>
 							<div className="w-full h-32 overflow-hidden rounded border cursor-pointer hover:opacity-90 transition-opacity">
 								<ImageWithFallback
-									webpSrc="/nano_banana_figurine.webp"
-									src="/nano_banana_figurine.png"
-									alt="Nano Banana Figurine"
+									webpSrc="/nano_banana_pro.webp"
+									src="/nano_banana_pro.png"
+									alt="Nano Banana Pro"
 									className="w-full h-full object-cover"
 								/>
 							</div>
 						</DialogTrigger>
 						<DialogContent className="max-w-4xl w-full p-0 border-none bg-transparent shadow-none">
 							<DialogTitle className="sr-only">
-								Nano Banana Figurine - Full Size View
+								Nano Banana Pro - Full Size View
 							</DialogTitle>
 							<DialogDescription className="sr-only">
-								Full size view of the nano banana figurine from the latest in
+								Full size view of the nano banana pro example from the latest in
 								tech
 							</DialogDescription>
 							<div className="relative">
 								<ImageWithFallback
-									webpSrc="/nano_banana_figurine.webp"
-									src="/nano_banana_figurine.png"
-									alt="Nano Banana Figurine - Full Size"
+									webpSrc="/nano_banana_pro.webp"
+									src="/nano_banana_pro.png"
+									alt="Nano Banana Pro - Full Size"
 									className="w-full h-auto max-h-[90vh] object-contain rounded-lg"
 								/>
 							</div>
