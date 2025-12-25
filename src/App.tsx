@@ -22,13 +22,13 @@ export default function App() {
 				{/* Main Introduction Card */}
 				<div className="card main-card">
 					<h1 className="mb-6 text-gray-800">Hey, Kingston here.</h1>
-					<div className="space-y-4 text-gray-700">
+					<div className="space-y-4 text-gray-800">
 						<p>
 							I grew up in Singapore and was a Software Engineer at Jane Street,
 							TikTok, and Verkada at some point.
 						</p>
 						<p>
-							Focusing on startup building right now, exciting things to come!
+							Building on my own right now, exciting things to come!
 						</p>
 					</div>
 				</div>
@@ -40,7 +40,7 @@ export default function App() {
 						<a
 							href="https://linkedin.com/in/kingston-kuan"
 							target="_blank"
-							rel="noopener noreferrer"
+							rel="noopener"
 							className="w-10 h-10 bg-white rounded-full flex items-center justify-center p-1 hover:bg-gray-100 transition-colors"
 						>
 							<img
@@ -52,7 +52,7 @@ export default function App() {
 						<a
 							href="https://github.com/kstonekuan"
 							target="_blank"
-							rel="noopener noreferrer"
+							rel="noopener"
 							className="w-10 h-10 bg-white rounded-full flex items-center justify-center p-1 hover:bg-gray-100 transition-colors"
 						>
 							<img src="/GitHub_logo.svg" alt="GitHub" className="w-8 h-8" />
@@ -60,7 +60,7 @@ export default function App() {
 						<a
 							href="https://x.com/kstonekuan"
 							target="_blank"
-							rel="noopener noreferrer"
+							rel="noopener"
 							className="w-10 h-10 bg-white rounded-full flex items-center justify-center p-1 hover:bg-gray-100 transition-colors"
 						>
 							<img src="/X_logo.svg" alt="X (Twitter)" className="w-8 h-8" />
@@ -107,7 +107,7 @@ export default function App() {
 				{/* Quotes Card */}
 				<div className="card quotes-card">
 					<h3 className="mb-4 text-gray-800">Quotes to live by:</h3>
-					<div className="space-y-3 text-sm text-gray-700">
+					<div className="space-y-3 text-sm text-gray-800">
 						<p>"Nothing good happens after 2 am"</p>
 						<p>
 							"When life gives you lemonade, make lemons. Life will be all like
@@ -117,6 +117,37 @@ export default function App() {
 							"With all due respect, I am gonna completely ignore everything you
 							just said."
 						</p>
+					</div>
+				</div>
+
+				{/* Projects Card */}
+				<div className="card projects-card">
+					<h4 className="mb-3 text-gray-800">Check these out</h4>
+					<div className="space-y-3 text-sm text-gray-800">
+						<div>
+							<p className="text-gray-800">Tambourine</p>
+							<p className="text-gray-800">Your personal voice interface into any app.</p>
+							<a
+								href="https://github.com/kstonekuan/tambourine-voice"
+								target="_blank"
+								rel="noopener"
+								className="font-medium text-gray-800 hover:underline"
+							>
+								https://github.com/kstonekuan/tambourine-voice
+							</a>
+						</div>
+						<div>
+							<p className="text-gray-800">Simple Chromium AI</p>
+							<p className="text-gray-800">Use local LLM in Chromium browsers.</p>
+							<a
+								href="https://github.com/kstonekuan/simple-chromium-ai"
+								target="_blank"
+								rel="noopener"
+								className="font-medium text-gray-800 hover:underline"
+							>
+								https://github.com/kstonekuan/simple-chromium-ai
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
