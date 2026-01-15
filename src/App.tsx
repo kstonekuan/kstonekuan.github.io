@@ -114,8 +114,7 @@ export default function App() {
 							'whaaaat?'"
 						</p>
 						<p>
-							"With all due respect, I am gonna completely ignore everything you
-							just said."
+							"Fun? I was never fun. You take that back."
 						</p>
 					</div>
 				</div>
