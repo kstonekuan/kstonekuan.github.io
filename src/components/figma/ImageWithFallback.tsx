@@ -7,6 +7,8 @@ const ERROR_IMG_SRC =
 interface ImageWithFallbackProps
 	extends React.ImgHTMLAttributes<HTMLImageElement> {
 	webpSrc?: string;
+	srcSet?: string;
+	sizes?: string;
 }
 
 export function ImageWithFallback(props: ImageWithFallbackProps) {
@@ -16,7 +18,18 @@ export function ImageWithFallback(props: ImageWithFallbackProps) {
 		setDidError(true);
 	};
 
-	const { src, webpSrc, alt, style, className, width, height, ...rest } = props;
+	const {
+		src,
+		webpSrc,
+		srcSet,
+		sizes,
+		alt,
+		style,
+		className,
+		width,
+		height,
+		...rest
+	} = props;
 
 	return didError ? (
 		<div
@@ -33,7 +46,7 @@ export function ImageWithFallback(props: ImageWithFallbackProps) {
 		</div>
 	) : webpSrc ? (
 		<picture className="block w-full h-full">
-			<source srcSet={webpSrc} type="image/webp" />
+			<source srcSet={srcSet ?? webpSrc} type="image/webp" sizes={sizes} />
 			<img
 				src={src}
 				alt={alt}

@@ -238,6 +238,7 @@ html {
 	width: 100%;
 	max-width: 400px;
 	font-family: serif;
+	contain: layout style;
 }
 
 .quotes-card {
