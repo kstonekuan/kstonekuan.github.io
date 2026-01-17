@@ -27,9 +27,7 @@ export default function App() {
 							I grew up in Singapore and was a Software Engineer at Jane Street,
 							TikTok, and Verkada at some point.
 						</p>
-						<p>
-							Building on my own right now, exciting things to come!
-						</p>
+						<p>Building on my own right now, exciting things to come!</p>
 					</div>
 				</div>
 
@@ -75,14 +73,19 @@ export default function App() {
 					</h4>
 					<Dialog open={isImageModalOpen} onOpenChange={setIsImageModalOpen}>
 						<DialogTrigger asChild>
-							<div className="w-full h-32 overflow-hidden rounded border cursor-pointer hover:opacity-90 transition-opacity">
+							<button
+								type="button"
+								className="w-full h-32 overflow-hidden rounded border cursor-pointer hover:opacity-90 transition-opacity"
+							>
 								<ImageWithFallback
 									webpSrc="/nano_banana_pro.webp"
-									src="/nano_banana_pro.png"
+									src="/nano_banana_pro.webp"
 									alt="Nano Banana Pro"
+									width={2048}
+									height={2048}
 									className="w-full h-full object-cover"
 								/>
-							</div>
+							</button>
 						</DialogTrigger>
 						<DialogContent className="max-w-4xl w-full p-0 border-none bg-transparent shadow-none">
 							<DialogTitle className="sr-only">
@@ -95,8 +98,10 @@ export default function App() {
 							<div className="relative">
 								<ImageWithFallback
 									webpSrc="/nano_banana_pro.webp"
-									src="/nano_banana_pro.png"
+									src="/nano_banana_pro.webp"
 									alt="Nano Banana Pro - Full Size"
+									width={2048}
+									height={2048}
 									className="w-full h-auto max-h-[90vh] object-contain rounded-lg"
 								/>
 							</div>
@@ -113,9 +118,7 @@ export default function App() {
 							"When life gives you lemonade, make lemons. Life will be all like
 							'whaaaat?'"
 						</p>
-						<p>
-							"Fun? I was never fun. You take that back."
-						</p>
+						<p>"Fun? I was never fun. You take that back."</p>
 					</div>
 				</div>
 
@@ -125,7 +128,9 @@ export default function App() {
 					<div className="space-y-3 text-sm text-gray-800">
 						<div>
 							<p className="text-gray-800">Tambourine</p>
-							<p className="text-gray-800">Your personal voice interface into any app.</p>
+							<p className="text-gray-800">
+								Your personal voice interface into any app.
+							</p>
 							<a
 								href="https://github.com/kstonekuan/tambourine-voice"
 								target="_blank"
@@ -137,7 +142,9 @@ export default function App() {
 						</div>
 						<div>
 							<p className="text-gray-800">Simple Chromium AI</p>
-							<p className="text-gray-800">Use local LLM in Chromium browsers.</p>
+							<p className="text-gray-800">
+								Use local LLM in Chromium browsers.
+							</p>
 							<a
 								href="https://github.com/kstonekuan/simple-chromium-ai"
 								target="_blank"

@@ -16,13 +16,12 @@ export function ImageWithFallback(props: ImageWithFallbackProps) {
 		setDidError(true);
 	};
 
-	const { src, webpSrc, alt, style, className, ...rest } = props;
+	const { src, webpSrc, alt, style, className, width, height, ...rest } = props;
 
 	return didError ? (
 		<div
 			className={`inline-block bg-gray-100 text-center align-middle ${className ?? ""}`}
 			style={style}
-			{...rest}
 		>
 			<div className="flex items-center justify-center w-full h-full">
 				<img
@@ -33,14 +32,17 @@ export function ImageWithFallback(props: ImageWithFallbackProps) {
 			</div>
 		</div>
 	) : webpSrc ? (
-		<picture>
+		<picture className="block w-full h-full">
 			<source srcSet={webpSrc} type="image/webp" />
 			<img
 				src={src}
 				alt={alt}
 				className={className}
 				style={style}
+				width={width}
+				height={height}
 				loading="lazy"
+				decoding="async"
 				{...rest}
 				onError={handleError}
 			/>
@@ -51,7 +53,10 @@ export function ImageWithFallback(props: ImageWithFallbackProps) {
 			alt={alt}
 			className={className}
 			style={style}
+			width={width}
+			height={height}
 			loading="lazy"
+			decoding="async"
 			{...rest}
 			onError={handleError}
 		/>

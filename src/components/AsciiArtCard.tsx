@@ -25,7 +25,7 @@ export function AsciiArtCard({ filePath, className = "" }: AsciiArtCardProps) {
 
 	if (isLoading) {
 		return (
-			<div className={`card ascii-card ${className}`}>
+			<div className={`card ascii-card min-h-[200px] ${className}`}>
 				<div className="text-center text-gray-700">Loading...</div>
 			</div>
 		);
@@ -33,7 +33,7 @@ export function AsciiArtCard({ filePath, className = "" }: AsciiArtCardProps) {
 
 	if (error) {
 		return (
-			<div className={`card ascii-card ${className}`}>
+			<div className={`card ascii-card min-h-[200px] ${className}`}>
 				<div className="text-center text-gray-700">
 					Failed to load ASCII art
 				</div>

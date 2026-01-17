@@ -7,10 +7,7 @@
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"includes": [
-			"**/*.{js,jsx,ts,tsx,json,css,scss,md,mdx}",
-			"!src/components/ui/*"
-		]
+		"includes": ["**/*.{js,jsx,ts,tsx,json,css,scss,md,mdx}"]
 	},
 	"formatter": {
 		"enabled": true,
