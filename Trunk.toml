@@ -1,0 +1,10 @@
+[build]
+target = "index.html"
+dist = "build"
+
+[watch]
+ignore = ["./build", "./target"]
+
+[serve]
+port = 3000
+open = true

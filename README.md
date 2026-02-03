@@ -1,75 +1,66 @@
 # All About Me
 
-A modern personal website built with React, Vite, and TypeScript, featuring a card-based layout design.
+A personal portfolio website built with Rust and WebAssembly using the Leptos framework.
 
 ## Tech Stack
 
-- **Framework**: React with Vite
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS with shadcn/ui components
-- **UI Components**: Radix UI primitives
-- **Code Quality**: Biome for linting and formatting
+- **Framework**: [Leptos](https://leptos.dev/) (Rust)
+- **Build Tool**: [Trunk](https://trunkrs.dev/)
+- **Styling**: Tailwind CSS
+- **Target**: WebAssembly (WASM)
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js (recommended: latest LTS version)
-- pnpm (preferred package manager)
-
-### Installation
-
-Install dependencies using pnpm:
-
-```bash
-pnpm install
-```
+- [Rust](https://rustup.rs/) (latest stable)
+- WASM target: `rustup target add wasm32-unknown-unknown`
+- Trunk: `cargo install trunk`
 
 ### Development
 
-Start the development server on port 3000:
+Start the development server with hot reload:
 
 ```bash
-pnpm dev
+trunk serve
 ```
 
-The site will automatically open in your browser at http://localhost:3000
+The site will open at http://localhost:3000
 
 ### Building
 
-Build the project for production:
+Build for production:
 
 ```bash
-pnpm build
+trunk build --release
 ```
 
-The built files will be output to the `build` directory.
-
-### Code Quality
-
-Run type checking:
-
-```bash
-pnpm typecheck
-```
-
-Run linting and formatting:
-
-```bash
-pnpm lint
-```
-
-Run all checks (typecheck + lint):
-
-```bash
-pnpm check
-```
+Output is in the `build/` directory.
 
 ## Project Structure
 
-- `/src` - Source code and components
-- `/public` - Static assets
-- `/build` - Production build output
-- `vite.config.ts` - Vite configuration
-- `tsconfig.json` - TypeScript configuration
-- `biome.json` - Biome linting and formatting configuration
+```
+├── Cargo.toml          # Rust dependencies
+├── Trunk.toml          # Build configuration
+├── index.html          # Entry point
+├── public/             # Static assets (images, SVGs)
+└── src/
+    ├── main.rs         # App entry point
+    ├── app.rs          # Main App component
+    ├── components/     # Reusable components
+    │   ├── mod.rs
+    │   ├── ascii_art_card.rs
+    │   ├── dialog.rs
+    │   └── image_with_fallback.rs
+    └── styles/
+        └── globals.css # Tailwind CSS
+```
+
+## Deployment
+
+The `build/` folder contains static files that can be deployed to any static hosting:
+
+- GitHub Pages
+- Cloudflare Pages
+- Netlify
+- Vercel

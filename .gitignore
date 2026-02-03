@@ -1,5 +1,9 @@
-node_modules
+# Build output
 build
-*.tsbuildinfo
-dist
+
+# Rust
+target
+Cargo.lock
+
+# IDE
 .claude
