@@ -1,9 +1,9 @@
 [build]
 target = "index.html"
-dist = "dist"
+dist = "build"
 
 [watch]
-ignore = ["./dist", "./target"]
+ignore = ["./build", "./target"]
 
 [serve]
 port = 3000

@@ -35,7 +35,7 @@ Build for production:
 trunk build --release
 ```
 
-Output is in the `dist/` directory.
+Output is in the `build/` directory.
 
 ## Project Structure
 
@@ -58,7 +58,7 @@ Output is in the `dist/` directory.
 
 ## Deployment
 
-The `dist/` folder contains static files that can be deployed to any static hosting:
+The `build/` folder contains static files that can be deployed to any static hosting:
 
 - GitHub Pages
 - Cloudflare Pages
