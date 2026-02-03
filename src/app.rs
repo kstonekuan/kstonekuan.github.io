@@ -34,17 +34,17 @@ pub fn App() -> impl IntoView {
                         <div class="flex items-center space-x-3">
                             <SocialLink
                                 href="https://linkedin.com/in/kingston-kuan"
-                                icon="/LinkedIn_logo.svg"
+                                icon="/public/LinkedIn_logo.svg"
                                 alt="LinkedIn"
                             />
                             <SocialLink
                                 href="https://github.com/kstonekuan"
-                                icon="/GitHub_logo.svg"
+                                icon="/public/GitHub_logo.svg"
                                 alt="GitHub"
                             />
                             <SocialLink
                                 href="https://x.com/kstonekuan"
-                                icon="/X_logo.svg"
+                                icon="/public/X_logo.svg"
                                 alt="X (Twitter)"
                             />
                         </div>
@@ -61,9 +61,9 @@ pub fn App() -> impl IntoView {
                             on:click=move |_| set_modal_open.set(true)
                         >
                             <ImageWithFallback
-                                webp_src="/nano_banana_pro-400w.webp"
-                                src="/nano_banana_pro-400w.webp"
-                                srcset="/nano_banana_pro-400w.webp 400w, /nano_banana_pro-800w.webp 800w"
+                                webp_src="/public/nano_banana_pro-400w.webp"
+                                src="/public/nano_banana_pro-400w.webp"
+                                srcset="/public/nano_banana_pro-400w.webp 400w, /public/nano_banana_pro-800w.webp 800w"
                                 sizes="(max-width: 640px) 326px, 400px"
                                 alt="Nano Banana Pro"
                                 class="w-full h-full object-cover"
@@ -75,8 +75,8 @@ pub fn App() -> impl IntoView {
                             on_close=Callback::new(move |_| set_modal_open.set(false))
                         >
                             <ImageWithFallback
-                                webp_src="/nano_banana_pro.webp"
-                                src="/nano_banana_pro.webp"
+                                webp_src="/public/nano_banana_pro.webp"
+                                src="/public/nano_banana_pro.webp"
                                 alt="Nano Banana Pro - Full Size"
                                 class="w-full h-auto max-h-[90vh] object-contain rounded-lg"
                             />
