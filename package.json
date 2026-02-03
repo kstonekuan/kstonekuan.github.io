@@ -1,34 +1,13 @@
 {
-	"name": "personal-site-card-layout",
+	"name": "kingston-portfolio",
 	"version": "0.1.0",
 	"private": true,
-	"dependencies": {
-		"@radix-ui/react-dialog": "1.1.15",
-		"@radix-ui/react-slot": "1.2.4",
-		"class-variance-authority": "0.7.1",
-		"clsx": "2.1.1",
-		"lucide-react": "0.563.0",
-		"react": "19.2.4",
-		"react-dom": "19.2.4",
-		"tailwind-merge": "3.4.0"
-	},
 	"devDependencies": {
-		"@biomejs/biome": "2.3.13",
-		"@tailwindcss/vite": "^4.1.18",
-		"@types/node": "25.0.10",
-		"@types/react": "19.2.10",
-		"@types/react-dom": "19.2.3",
-		"@vitejs/plugin-react-swc": "4.2.2",
-		"tailwindcss": "^3.4.19",
-		"terser": "5.46.0",
-		"typescript": "5.9.3",
-		"vite": "7.3.1"
+		"tailwindcss": "^3.4.19"
 	},
 	"scripts": {
-		"dev": "vite",
-		"build": "vite build",
-		"typecheck": "tsc --noEmit",
-		"lint": "biome check --write .",
-		"check": "pnpm typecheck && pnpm lint"
+		"build:css": "tailwindcss -i src/styles/globals.css -o .trunk-staging/output.css --minify",
+		"dev": "trunk serve",
+		"build": "trunk build --release"
 	}
 }
