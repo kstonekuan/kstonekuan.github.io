@@ -1,0 +1,19 @@
+[package]
+name = "kingston-portfolio"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+leptos = { version = "0.7", features = ["csr"] }
+console_error_panic_hook = "0.1"
+web-sys = { version = "0.3", features = [
+    "HtmlDialogElement",
+    "HtmlImageElement",
+    "DomRect",
+    "MouseEvent",
+] }
+
+[profile.release]
+opt-level = 'z'
+lto = true
+codegen-units = 1

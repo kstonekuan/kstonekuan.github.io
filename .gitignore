@@ -3,3 +3,8 @@ build
 *.tsbuildinfo
 dist
 .claude
+
+# Rust
+target
+Cargo.lock
+.trunk-staging
