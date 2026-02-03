@@ -3,14 +3,8 @@ target = "index.html"
 dist = "dist"
 
 [watch]
-ignore = ["./dist", "./node_modules", "./target"]
+ignore = ["./dist", "./target"]
 
 [serve]
 port = 3000
 open = true
-
-# Use a pre-build hook to compile Tailwind via npm
-[[hooks]]
-stage = "pre_build"
-command = "sh"
-command_arguments = ["-c", "mkdir -p .trunk-staging && pnpm exec tailwindcss -i src/styles/globals.css -o .trunk-staging/output.css --minify"]

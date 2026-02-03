@@ -1,10 +1,10 @@
-node_modules
-build
-*.tsbuildinfo
+# Build output
 dist
-.claude
+build
 
 # Rust
 target
 Cargo.lock
-.trunk-staging
+
+# IDE
+.claude
