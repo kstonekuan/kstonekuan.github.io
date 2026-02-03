@@ -1,12 +1,8 @@
-use leptos::prelude::*;
 use leptos::html::Dialog as HtmlDialog;
+use leptos::prelude::*;
 
 #[component]
-pub fn Dialog(
-    open: ReadSignal<bool>,
-    on_close: Callback<()>,
-    children: Children,
-) -> impl IntoView {
+pub fn Dialog(open: ReadSignal<bool>, on_close: Callback<()>, children: Children) -> impl IntoView {
     let dialog_ref = NodeRef::<HtmlDialog>::new();
 
     // Sync dialog open state with signal
@@ -29,8 +25,8 @@ pub fn Dialog(
                 // Close on backdrop click
                 if let Some(dialog) = dialog_ref.get() {
                     let rect = dialog.get_bounding_client_rect();
-                    let x = ev.client_x() as f64;
-                    let y = ev.client_y() as f64;
+                    let x = f64::from(ev.client_x());
+                    let y = f64::from(ev.client_y());
                     if x < rect.left() || x > rect.right() || y < rect.top() || y > rect.bottom() {
                         on_close.run(());
                     }

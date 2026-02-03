@@ -1,5 +1,5 @@
-use leptos::prelude::*;
 use crate::components::{AsciiArtCard, Dialog, ImageWithFallback};
+use leptos::prelude::*;
 
 // Embed ASCII art at compile time (replaces Vite's ?raw import)
 const ASCII_ART: &str = include_str!("../public/ascii.txt");
@@ -72,7 +72,7 @@ pub fn App() -> impl IntoView {
 
                         <Dialog
                             open=is_modal_open
-                            on_close=Callback::new(move |_| set_modal_open.set(false))
+                            on_close=Callback::new(move |()| set_modal_open.set(false))
                         >
                             <ImageWithFallback
                                 webp_src="/public/nano_banana_pro.webp"
@@ -116,11 +116,7 @@ pub fn App() -> impl IntoView {
 }
 
 #[component]
-fn SocialLink(
-    href: &'static str,
-    icon: &'static str,
-    alt: &'static str,
-) -> impl IntoView {
+fn SocialLink(href: &'static str, icon: &'static str, alt: &'static str) -> impl IntoView {
     view! {
         <a
             href=href
@@ -134,11 +130,7 @@ fn SocialLink(
 }
 
 #[component]
-fn ProjectItem(
-    title: &'static str,
-    description: &'static str,
-    url: &'static str,
-) -> impl IntoView {
+fn ProjectItem(title: &'static str, description: &'static str, url: &'static str) -> impl IntoView {
     view! {
         <div>
             <p class="text-gray-800">{title}</p>
