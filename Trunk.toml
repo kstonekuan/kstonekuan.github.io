@@ -1,6 +1,7 @@
 [build]
 target = "index.html"
 dist = "build"
+minify = "on_release"
 
 [watch]
 ignore = ["./build", "./target"]

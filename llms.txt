@@ -1,0 +1,23 @@
+# Kingston Kuan
+
+> Personal website of Kingston Kuan, a software engineer from Singapore who previously worked at Jane Street, TikTok, and Verkada. Currently building independently.
+
+## About
+
+Kingston Kuan is a software engineer based in Singapore. He has professional experience at:
+- Jane Street (Software Engineer)
+- TikTok (Software Engineer)
+- Verkada (Software Engineer)
+
+He is currently working on independent projects.
+
+## Projects
+
+- [Tambourine](https://github.com/kstonekuan/tambourine-voice): Your personal voice interface into any app
+- [Simple Chromium AI](https://github.com/kstonekuan/simple-chromium-ai): Use local LLM in Chromium browsers
+
+## Links
+
+- [LinkedIn](https://linkedin.com/in/kingston-kuan)
+- [GitHub](https://github.com/kstonekuan)
+- [X (Twitter)](https://x.com/kstonekuan)
