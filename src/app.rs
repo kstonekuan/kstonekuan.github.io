@@ -107,6 +107,11 @@ pub fn App() -> impl IntoView {
                                 description="Use local LLM in Chromium browsers."
                                 url="https://github.com/kstonekuan/simple-chromium-ai"
                             />
+                            <ProjectItem
+                                title="Blog"
+                                description="My adventures in tech."
+                                url="https://kingstonkuan.com/blog"
+                            />
                         </div>
                     </div>
                 </div>
