@@ -19,7 +19,7 @@ pub fn App() -> impl IntoView {
 
                     // Main Introduction Card
                     <div class="card main-card">
-                        <h1 class="mb-6 text-gray-800">"Hey, Kingston here."</h1>
+                        <h1 class="mb-6 text-base text-gray-800">"Hey, Kingston here."</h1>
                         <div class="space-y-4 text-gray-800">
                             <p>
                                 "I grew up in Singapore and was a Software Engineer at Jane Street, TikTok, and Verkada at some point."
@@ -30,7 +30,7 @@ pub fn App() -> impl IntoView {
 
                     // Follow Card
                     <div class="card social-card">
-                        <h2 class="mb-3 text-gray-800">"Follow along"</h2>
+                        <h2 class="mb-3 text-base text-gray-800">"Follow along"</h2>
                         <div class="flex items-center space-x-3">
                             <SocialLink
                                 href="https://linkedin.com/in/kingston-kuan"
@@ -52,7 +52,7 @@ pub fn App() -> impl IntoView {
 
                     // Tech Showcase Card
                     <div class="card tech-card">
-                        <h2 class="mb-3 text-gray-800">
+                        <h2 class="mb-3 text-base text-gray-800">
                             "Something cool from the latest in tech:"
                         </h2>
                         <button
@@ -85,7 +85,7 @@ pub fn App() -> impl IntoView {
 
                     // Quotes Card
                     <div class="card quotes-card">
-                        <h2 class="mb-4 text-gray-800">"Quotes to live by:"</h2>
+                        <h2 class="mb-4 text-base text-gray-800">"Quotes to live by:"</h2>
                         <div class="space-y-3 text-sm text-gray-800">
                             <p>"\"Nothing good happens after 2 am\""</p>
                             <p>"\"When life gives you lemonade, make lemons. Life will be all like 'whaaaat?'\""</p>
@@ -95,7 +95,7 @@ pub fn App() -> impl IntoView {
 
                     // Projects Card
                     <div class="card projects-card">
-                        <h2 class="mb-3 text-gray-800">"Check these out"</h2>
+                        <h2 class="mb-3 text-base text-gray-800">"Check these out"</h2>
                         <div class="space-y-3 text-sm text-gray-800">
                             <ProjectItem
                                 title="Tambourine"
